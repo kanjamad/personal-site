@@ -4,19 +4,19 @@
 
 **Create wireframes**: For a store page and implement my design.
 
-![https://wireframe.cc/oLGHDd](https://git.generalassemb.ly/kanjamad/kanjamad-site/blob/master/images/HEADER.png " wireframe header")
+![https://wireframe.cc/oLGHDd](https://github.com/kanjamad/personal-site/blob/master/images/HEADER.png " wireframe header")
 
-![https://wireframe.cc/fUDpMW](https://git.generalassemb.ly/kanjamad/kanjamad-site/blob/master/images/skills.png " wireframe skills")
+![https://wireframe.cc/fUDpMW](https://github.com/kanjamad/personal-site/blob/master/images/skills.png " wireframe skills")
 
-![https://wireframe.cc/AMptaw](https://git.generalassemb.ly/kanjamad/kanjamad-site/blob/master/images/about_me.png " wireframe about me")
-
-
-![https://wireframe.cc/ULehBA](https://git.generalassemb.ly/kanjamad/kanjamad-site/blob/master/images/PROJECTS.png " wireframe project")
+![https://wireframe.cc/AMptaw](https://github.com/kanjamad/personal-site/blob/master/images/about_me.png " wireframe about me")
 
 
-![https://wireframe.cc/391GFd](https://git.generalassemb.ly/kanjamad/kanjamad-site/blob/master/images/contact.png " wireframe contact")
+![https://wireframe.cc/ULehBA](https://github.com/kanjamad/personal-site/blob/master/images/PROJECTS.png " wireframe project")
 
-![https://wireframe.cc/391GFd](https://git.generalassemb.ly/kanjamad/About-Me-Site/blob/master/assets/img/flex-box.png " wireframe Flex box")
+
+![https://wireframe.cc/391GFd](https://github.com/kanjamad/personal-site/blob/master/images/contact.png " wireframe contact")
+
+![https://wireframe.cc/391GFd](https://github.com/kanjamad/personal-site/blob/master/images/flex-box.png " wireframe Flex box")
 
 
 ### Link
