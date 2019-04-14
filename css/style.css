@@ -1,0 +1,1001 @@
+
+/* ----------------------------------------
+							Base Styles
+------------------------------------------- */
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+html {
+	font-size: 15px;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	text-align: center;
+	color: palevioletred;
+}
+
+/* Responsive images */
+img {
+	max-width: 100%;
+}
+
+/* ----------------------------------------
+							Typography
+------------------------------------------- */
+p {
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 37.5px;
+	font-size: 2.5rem;
+	letter-spacing: 12px;
+	letter-spacing: .8rem;
+}
+
+h2 {
+	margin-bottom: 45px;
+	margin-bottom: 3rem;
+}
+
+h3 {
+	margin-bottom: 45px;
+	margin-bottom: 3rem;
+}
+
+
+
+
+
+/* ----------------------------------------
+							Lists
+------------------------------------------- */
+ul a {
+	text-transform: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: block;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #7B98AA;
+	font-weight: 600;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+	color: palevioletred;
+}
+
+
+
+
+
+/* ----------------------------------------
+							Header
+------------------------------------------- */
+header {
+	background-image: url('../images/abstract-1278017_1280.jpg');
+	padding-top: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 100;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	letter-spacing: .05rem;
+	padding: 3px 60px;
+	padding: .2rem 4rem;
+	display: inline-block;
+	border-bottom: none;
+	text-transform: uppercase;
+}
+
+
+  /* nav */
+  
+  .header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #fff;
+  }
+  
+  .header li a {
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid #f4f4f4;
+	text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+	background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+  }
+  
+  /* nav menu */
+  
+  .header .menu {
+	clear: both;
+	max-height: 0;
+	-webkit-transition: max-height .2s ease-out;
+	transition: max-height .2s ease-out;
+  }
+  
+  /* nav menu icon */
+  
+  .header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	-webkit-transition: background .2s ease-out;
+	transition: background .2s ease-out;
+	width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+	background:palevioletred;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+	top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+	top: -5px;
+  }
+  
+  /* nav menu btn */
+  
+  .header .menu-btn {
+	display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 20px 30px;
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header .menu-icon {
+		display: none;
+	}
+  }
+
+	
+	/* ----------------------------------------
+								Skills
+------------------------------------------- */
+.skill {
+	margin-bottom: 100px;
+	margin-right: 100px;
+	margin-left: 20px;
+}
+
+.col-skills {
+	width: 32%;
+}
+
+
+  
+
+/* ----------------------------------------
+								About
+------------------------------------------- */
+#about{
+	margin-right: 400px;
+}
+
+.about article {
+	max-width: 800px;
+	font-size: 17.6px;
+	font-size: 1.1rem;
+	line-height: 1.1;
+}
+
+.about h2 {
+	margin-bottom: 0;
+}
+
+
+/* about layout */
+.wrap-about{
+	margin-left: 40px;
+	margin-right: 10px;
+}
+
+.about-pic{
+	margin-left: 400px;
+	-webkit-box-shadow: 30px 20px 9px palevioletred;
+	box-shadow: 30px 20px 9px palevioletred;
+}
+.about-header{
+	margin-left: 200px;
+	width: 400px;
+}
+.about-tittle{
+	width: 600px;
+	margin-left: 100px;
+}
+
+.about-text{
+	width: 800px;
+}
+
+.col-about {
+	width: 40%;
+}
+
+
+
+/* ----------------------------------------
+								Carousel
+------------------------------------------- */
+.pic-carousel {
+	padding-left: 400px;
+	padding-right: 400px;
+}
+
+
+
+
+.body {
+  font-family: Helvetica; 
+  font-weight: 400;
+  background: #ecf0f1;
+}
+.mainCarousel{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1.2em 0;
+  color: #555555;
+}
+
+
+/*Carousel*/
+.carrousel {
+  background: #ffffff;
+  text-align: center;
+  padding: 4em 0;
+  height: 7.5em;
+  max-width: 750px;
+  margin: auto;
+  position: relative;
+	overflow: hidden;
+	height: 220px;
+	padding-left: 100px;
+}
+.carrousel h2 {
+  margin: 0;
+  margin-top: -1.7em;
+  padding: 0;
+  font-size: 1em;
+  text-align: center;
+  color: #bbbbbb;
+}
+.carrousel .slides {
+  width: 400%;
+  left: 0;
+  padding-left: 0;
+  padding-top: 1em;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+
+  -webkit-transition: transform .5s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+.carrousel .slides li {
+  width: 25%;
+  position: relative;
+  float: left;
+}
+.carrousel li p{
+  margin-top: 0;  
+}
+.carrousel li q {
+  max-width: 90%;
+  margin: auto;
+  color: #666666;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.carrousel li img {
+  width:3em;
+  border-radius: 50%;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.carrousel li span.author {
+  margin-top:0.5em;
+  font-size: 1.2em;
+  color: #777777;
+  display: block;
+}
+.carrousel .slidesNavigation {
+  display: block;
+  list-style: none;
+  text-align: center;
+  bottom: 1em;
+  /*--- Centering trick---*/
+    /* Absolute positioning*/
+    position: absolute; 
+    /* Abosulte positioning*/
+    width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%; /*Centering de element*/
+    margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+}
+.carrousel input {
+  display: none;
+}
+.carrousel .slidesNavigation label {
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: solid 2px #2980b9;
+  font-size: 0;
+}
+/* You have to repeat this with each slide
+TODO: make it easier with SCSS
+25% movement 100/slides-num
+*/
+#radio-1:checked ~ .slides {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+#radio-2:checked ~ .slides {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+#radio-3:checked ~ .slides {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#radio-4:checked ~ .slides {
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+
+
+.carrousel .slidesNavigation label:hover {
+  cursor: pointer;
+}
+/* You have to repeat this with each slide/dot */
+.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+  background: #2980b9;
+}
+
+@media  (max-width: 796px) {
+  .carrousel{
+		height: 8.5em;
+		height: 220px;
+		padding-left: 100px;
+  }
+}
+@media  (max-width: 480px) {
+  .carrousel li p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .carrousel li q {
+      font-size: 1em;
+  }
+  .carrousel li img {
+    width:2em;
+    margin-left: -1em;
+    margin-right: 0.25em;
+  }
+}
+
+
+
+
+
+
+/* ----------------------------------------
+					Layout
+------------------------------------------- */
+section {
+	padding: 105px 30px;
+	padding: 7rem 2rem;
+}
+
+.wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.grid-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+
+
+.col-third {
+	width: 32%;
+}
+
+
+
+.col-form {
+	width: 49%;
+}
+
+.col-half {
+	width: 49.2%;
+}
+
+.vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap:  wrap;
+	flex-wrap:  wrap;
+}
+
+.callout {
+	background-color:black;
+}
+
+
+
+
+/* ----------------------------------------
+								Buttons
+------------------------------------------- */
+button {
+	cursor: pointer;
+	outline: 0;
+	border: 2px solid yellow;
+	color: #44545E;
+	padding: 8px 25.5px;
+	padding: 8px 1.7rem;
+	background-color: transparent;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12.299px;
+	font-size: .82rem;
+	letter-spacing: 1.2px;
+	letter-spacing: .08rem;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+button:hover {
+	background-color: palevioletred;
+	color: white;
+	font-weight: 600;
+}
+
+
+
+
+
+/* ----------------------------------------
+					Projects
+------------------------------------------- */
+
+#projects img {
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+#projects img:hover {
+	opacity: .6;
+}
+
+#projects {
+	padding-bottom: 0;
+	background-color:black;
+}
+
+
+.border-animation {
+	outline: solid 5px #FC5185;
+  -webkit-transition: outline 0.6s linear;
+  transition: outline 0.6s linear;
+  margin: 0.5em; /* Increased margin since the outline expands outside the element */
+}
+
+.border-animation:hover {
+	outline-width: 20px;
+}
+
+
+
+
+.masonry img {
+	width: 31%;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+.masonry img:hover {
+	opacity: .6;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------
+								Contact
+------------------------------------------- */
+
+#contact {
+	padding-top: 2rem;
+	padding-top: 24px;
+	padding-top: 1.5rem;
+}
+
+
+form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+form button {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	display: block;
+}
+
+input, textarea {
+	border: 2px solid yellow;
+	margin-bottom: 12px;
+	margin-bottom: .8rem;
+	padding: 10px 10px;
+	outline: 0;
+}
+
+::-webkit-input-placeholder {
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600;
+}
+
+:-ms-input-placeholder {  
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600; 
+}
+
+
+
+
+/* ----------------------------------------
+
+								Error Styles
+------------------------------------------- */
+.form-group input,
+.form-group:last-of-type {
+	width: 100%;
+}
+
+.error-message {
+	margin: -8px 0 12px;
+  text-align: left;
+  font-size: .9rem;
+  color: #ED5254;
+  display: none;
+}
+
+.error {
+	border: 2px solid #ED5254;
+}
+
+
+
+
+
+
+/* ----------------------------------------
+								Footer
+------------------------------------------- */
+footer {
+	background-color: black;
+	overflow: auto;
+}
+
+footer input {
+	padding: 11px 10px;
+	width: 300px;
+	margin-right: 30px;
+	margin-right: 2rem;
+	border: 0;
+	text-align: center;
+}
+
+footer .wrap {
+	padding: 30px 15px;
+	padding: 2rem 1rem;
+}
+
+.social-links a {
+	font-size: 30px;
+	font-size: 2rem;
+	padding: 15px;
+	padding: 1rem;
+	margin-bottom: 30px;
+	margin-bottom: 2rem;
+	display: inline-block;
+	color: #44545E;
+}
+
+.copyright {
+	border-top: 2px solid #44545E;
+	padding: 15px 0 3px;
+	padding: 1rem 0 .2rem;
+}
+
+
+
+/* ----------------------------------------
+							Media Queries
+------------------------------------------- */
+
+@media only screen and (max-width: 790px) {
+	nav a {
+		padding: .2rem 2rem;
+	}
+	.col-third {
+		width: 100%;
+	}
+
+	.col-about {
+		width: 100%;
+	}
+
+	.articles button {
+		margin-top: .5rem;
+	}
+
+	.col-third img {
+		display: block;
+		margin: 3rem auto 1rem;
+	}
+
+	.col-third h3 {
+		margin-bottom: .5rem;
+	}
+
+	.col-third:first-of-type img {
+		margin-top: 0;
+	}
+
+	/* about */
+.wrap-about{
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+.about-pic{
+	margin-left: 0px;
+	-webkit-box-shadow: 30px 20px 9px blue;
+	        box-shadow: 30px 20px 9px blue;
+	width: 200px;
+}
+.about-header{
+	margin-left: 200px;
+	width: 300px;
+}
+.about-tittle{
+	width: 550px;
+	margin-left: 40px;
+}
+
+.about-text{
+	width: 700px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 560px) {
+	html {
+		font-size: 14px;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	nav {
+		background-color: transparent;
+	}
+
+
+	.pic-carousel{
+		padding-left: 0px;
+		padding-right: 0px;
+	}	
+
+/* about */
+.wrap-about{
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+.about-pic{
+	margin-left: 0px;
+	-webkit-box-shadow: 30px 20px 9px blue;
+	box-shadow: 30px 20px 9px blue;
+	width: 50px;
+}
+.about-header{
+	margin-left: 0px;
+	width: 300px;
+}
+.about-tittle{
+	width: 300px;
+	margin-left: 0px;
+}
+
+.about-text{
+	width: 300px;
+}
+
+
+    /* .hamburger{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 2px;
+        color: chartreuse;
+        font-size: 1.7rem;
+        
+    }
+
+    .fa-car,.fa-images,.fa-file-alt,.fa-envelope {
+        display: block;
+        position: absolute;
+    } */
+
+.col-half {
+		width: 100%;
+}
+
+/* about */
+.wrap-about{
+	margin-left: 40px;
+	margin-right: 0px;
+}
+
+.about-pic{
+	margin-left: 0px;
+	-webkit-box-shadow: 30px 20px 9px blue;
+	        box-shadow: 30px 20px 9px blue;
+	width: 100px;
+
+}
+.about-header{
+	margin-left: 0px;
+	width: 300px;
+}
+.about-tittle{
+	width: 300px;
+	margin-left: 0px;
+}
+
+.about-text{
+	width: 300px;
+}
+
+.col-third {
+	width: 32%;
+}
+
+	.col-skills {
+		width: 32%;
+	}
+
+	.skill {
+		margin-bottom: 100px;
+		margin-right: 100px;
+		margin-left: 20px;
+	}
+
+.pic-carousel{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+
+	footer button {
+		width: 300px;
+	}
+	
+	footer input {
+		margin-right: 0;
+	}
+<<<<<<< HEAD
+}
+
+
+
+
+
+
+
+
